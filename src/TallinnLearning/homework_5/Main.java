@@ -5,11 +5,17 @@ public class Main {
         Dog myDog = new Dog();
         myDog.name = "Max";
         myDog.age = 3;
-        myDog.color = "чёрный";
+        myDog.color = "black";
         System.out.println("У нас есть собака по имени: " + myDog.name + " возвраст: " + myDog.age + " цвет: " + myDog.color);
         myDog.barking();
-        myDog.barking2();
-        System.out.printf(myDog.barking2());
+
+        Dog redDog = new Dog();
+        System.out.println("У нас есть собака по имени: " + redDog.name + " возвраст: " + redDog.age + " цвет: " + redDog.color);
+        System.out.println(redDog.barking2());
+
+        Dog whiteDog = new Dog("Arctic", 4, "white");
+        System.out.println("У нас есть собака по имени: " + whiteDog.name + " возвраст: " + whiteDog.age + " цвет: " + whiteDog.color);
+        System.out.printf(whiteDog.barking2());
     }
 
 }
